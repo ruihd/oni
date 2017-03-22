@@ -103,3 +103,52 @@ int main() {
     
 	return 0;
 }
+
+
+
+
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    
+    int N;
+    int r;
+    int x;
+    int d;
+    int K;
+    int s;
+    cin >> N;   
+    cout << N << endl; 
+
+    vector<int> v;
+    
+    for(int a = 0; a < N; a++){
+        cin >> K;
+        for(int i = 0; i < K; i++){
+            cin >> x;
+            v.push_back(x);
+        }
+        sort(v.begin(), v.end());
+        d = v[K - 1];
+        for(int l = K; l = 0; l = l - 1){
+        r = v[K - 1];
+        s = v[K - 2];
+        
+        if(r - s < d && r - s > 0){
+        d = r - s;
+        }
+            
+        }    
+        cout << d << endl;
+     
+      v.clear();  
+   }
+    
+	return 0;
+}
