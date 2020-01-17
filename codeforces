@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int m;
+    int temp;
+    cin >>n>>m;
+    
+    int orders[m];
+    int min[n];
+    int total
+    int max[n];
+    for(int k = 0;k<n;k++){
+        pos[k]=k+1;
+        max[k]=k+1;
+        min[k]=k+1;
+    }
+    
+    
+    for(int i = 1;i<m+1;i++){
+        cin>>temp;
+        min[temp-1]=1;
+        
+    }
+    for(int l = 0; l<n;l++){
+        cout<<min[l]<<" "<<max[l]<<endl;
+    }
+    
+	return 0;
+}
